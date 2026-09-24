@@ -18,9 +18,14 @@ datasets:
 - fancyzhx/ag_news
 - google/boolq
 - SetFit/sst5
+new_version: chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX
 ---
+> **Jev-Style v3 is available — smaller and stronger:** [Jev-Style-0.8B-Decision-v3-MLX](https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX) scores **79.2%** on the 2,000 typed decisions (v1: 53.4%, v2: 73.5%, as reported on the v2 card), takes **25,600-token** inputs, works across **51 languages** and scores options without the 26-letter cap (tested with 77 options), all at **0.8B** parameters. This repository preserves v1; v2 is [here](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16).
+
 
 # Jev-Style-Qwen3.5-2B-Decision (MLX, bf16)
+
+**Website:** [jevstyle.com](https://jevstyle.com/#v1) — all JevStyle decision models, benchmarks and quickstart in one place.
 
 A **Jev-style decision model**: it does not write text. Give it a state, a question and a list of options, and one forward pass returns the decision **with calibrated probabilities** - in 77 ms on an M1 Max.
 
@@ -117,3 +122,9 @@ The next token is the option letter (` A`, ` B`, ...). Its probability, renormal
 ## Training data and licence
 
 SST-2 and MNLI (GLUE), AG News, BoolQ and SST-5, 22k examples converted to typed decisions; 80% for LoRA training, 20% held out for the calibration temperature. AG News is distributed for research / non-commercial use. Weights: Apache-2.0, same as [Qwen/Qwen3.5-2B-Base](https://huggingface.co/Qwen/Qwen3.5-2B-Base).
+
+## Contact
+
+I welcome internship, employment, and research collaboration opportunities. Please contact me at [**yanchaoliang369@gmail.com**](mailto:yanchaoliang369@gmail.com).
+
+欢迎提供实习、工作及科研合作机会，请邮件联系：[yanchaoliang369@gmail.com](mailto:yanchaoliang369@gmail.com)。
